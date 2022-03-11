@@ -7,4 +7,8 @@ Entre na pasta /src e rode o comando:
 go run main.go
 ```
 
-## Ideias para 
+## Para implementar
+- Aplicar estrutura clean architecture
+- Criação de rota para manipulação de despesas (crud)
+- Definir estrutura do documento de despesas
+- Conectar projeto com firebase
