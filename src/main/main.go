@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/EwertonMendes/billog-backend/src/main/resources"
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,11 +12,7 @@ func main() {
 
 	v1 := router.Group("/api/v1")
 	{
-		v1.GET("/hello", func(c *gin.Context) {
-			c.JSON(200, gin.H{
-				"message": "Hello, World!",
-			})
-		})
+		resources.Routes(v1)
 	}
 
 	router.Run(PORT)
